@@ -54,14 +54,12 @@ src/main/resources/application.properties
 3. Lancer le projet :
 mvn spring-boot:run
 
-
 👉 Backend accessible sur :
-
 http://localhost:8080
 
 👉 Swagger :
-
 http://localhost:8080/swagger-ui/index.html
+
 ▶️ Frontend
 Ouvrir le projet dans VS Code
 Installer les dépendances :
@@ -70,15 +68,9 @@ Lancer :
 npm run dev
 
 👉 Frontend accessible sur :
-
 http://localhost:3000
-🔐 Comptes de test
-👑 Admin
-Email : admin.updated@test.com
-Mot de passe : 999999
-👤 Utilisateur
-Email : user@test.com
-Mot de passe : 123456
+
+
 ⚙️ Fonctionnalités
 👤 Utilisateur
 inscription / connexion
@@ -88,11 +80,13 @@ vérifier disponibilité
 créer une réservation
 annuler une réservation
 voir mes réservations
+
 👑 Administrateur
 dashboard (statistiques)
 gestion des utilisateurs
 gestion des espaces (CRUD)
 consultation de toutes les réservations
+
 📡 API REST
 🔐 Auth
 POST /api/auth/register
@@ -114,48 +108,17 @@ GET /api/admin/users
 PUT /api/admin/users/{id}/role
 PUT /api/admin/users/{id}/toggle
 GET /api/admin/reservations
-📸 Captures d’écran
-Swagger
 
-Espaces
 
-Réservations
-
-Dashboard Admin
-
-📬 Tests API
-
-Une collection Postman est fournie :
-
-postman_collection.json
-
-Elle contient :
-
-Auth
-Spaces
-Reservations
-Admin
-🗄️ Données de démonstration
-
-Un fichier est fourni :
-
-data.sql
-
-Il permet d’initialiser :
-
-utilisateurs
-espaces
-réservations
 🔒 Sécurité
 Authentification avec JWT
 Routes protégées par rôles :
 USER
 ADMIN
 Endpoints sensibles sécurisés
+
 🧪 Tests
-
-Les tests peuvent être effectués via :
-
+Les tests sont effectués via :
 Swagger
 Postman
-Frontend
+
