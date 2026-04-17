@@ -1,0 +1,22 @@
+# ===== Backend / Java / Spring Boot =====
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.idea/
+backend/*.log
+
+# ===== Frontend / Node / React / Vite =====
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.idea/
+
+# ===== General =====
+.DS_Store
+Thumbs.db
+*.log
+.env
+
+backend/src/main/resources/application.properties
+frontend/.env

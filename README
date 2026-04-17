@@ -1,0 +1,164 @@
+# 🏢 Coworking Space Booking Platform
+
+## 📌 Description
+
+Ce projet est une application web complète de gestion de réservation d’espaces de coworking.
+
+Elle permet :
+- aux visiteurs de consulter les espaces disponibles
+- aux utilisateurs de réserver et gérer leurs réservations
+- aux administrateurs de gérer les utilisateurs, les espaces et les statistiques
+
+---
+
+## 🧱 Technologies utilisées
+
+### 🔹 Backend
+- Java 17
+- Spring Boot
+- Spring Security (JWT)
+- Spring Data JPA
+- PostgreSQL
+- Swagger (OpenAPI)
+
+### 🔹 Frontend
+- React.js
+- Vite
+- Axios
+- Tailwind CSS
+
+---
+
+## 🏗️ Architecture
+
+Le backend suit une architecture en couches :
+
+- Controller (API REST)
+- Service (logique métier)
+- Repository (accès base de données)
+- DTO / Mapper
+- Security (JWT)
+
+---
+
+## 🚀 Lancement du projet
+
+### ▶️ Backend
+
+1. Ouvrir le projet dans STS4 
+2. Configurer la base de données dans :
+
+```text
+src/main/resources/application.properties
+
+3. Lancer le projet :
+mvn spring-boot:run
+
+ou :
+
+clic droit → Run As → Spring Boot App
+
+👉 Backend accessible sur :
+
+http://localhost:8080
+
+👉 Swagger :
+
+http://localhost:8080/swagger-ui/index.html
+▶️ Frontend
+Ouvrir le projet dans VS Code
+Installer les dépendances :
+npm install
+Lancer :
+npm run dev
+
+👉 Frontend accessible sur :
+
+http://localhost:3000
+🔐 Comptes de test
+👑 Admin
+Email : admin.updated@test.com
+Mot de passe : 999999
+👤 Utilisateur
+Email : user@test.com
+Mot de passe : 123456
+⚙️ Fonctionnalités
+👤 Utilisateur
+inscription / connexion
+consulter les espaces
+voir détails d’un espace
+vérifier disponibilité
+créer une réservation
+annuler une réservation
+voir mes réservations
+👑 Administrateur
+dashboard (statistiques)
+gestion des utilisateurs
+gestion des espaces (CRUD)
+consultation de toutes les réservations
+📡 API REST
+🔐 Auth
+POST /api/auth/register
+POST /api/auth/login
+🏢 Espaces
+GET /api/spaces
+GET /api/spaces/{id}
+GET /api/spaces/{id}/availability
+POST /api/spaces (ADMIN)
+PUT /api/spaces/{id} (ADMIN)
+DELETE /api/spaces/{id} (ADMIN)
+📅 Réservations
+POST /api/reservations
+GET /api/reservations/me
+PUT /api/reservations/{id}/cancel
+👑 Admin
+GET /api/admin/stats/dashboard
+GET /api/admin/users
+PUT /api/admin/users/{id}/role
+PUT /api/admin/users/{id}/toggle
+GET /api/admin/reservations
+📸 Captures d’écran
+Swagger
+
+Espaces
+
+Réservations
+
+Dashboard Admin
+
+📬 Tests API
+
+Une collection Postman est fournie :
+
+postman_collection.json
+
+Elle contient :
+
+Auth
+Spaces
+Reservations
+Admin
+🗄️ Données de démonstration
+
+Un fichier est fourni :
+
+data.sql
+
+Il permet d’initialiser :
+
+utilisateurs
+espaces
+réservations
+🔒 Sécurité
+Authentification avec JWT
+Routes protégées par rôles :
+USER
+ADMIN
+Endpoints sensibles sécurisés
+🧪 Tests
+
+Les tests peuvent être effectués via :
+
+Swagger
+Postman
+Frontend
