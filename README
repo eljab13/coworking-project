@@ -54,9 +54,6 @@ src/main/resources/application.properties
 3. Lancer le projet :
 mvn spring-boot:run
 
-ou :
-
-clic droit → Run As → Spring Boot App
 
 👉 Backend accessible sur :
 
